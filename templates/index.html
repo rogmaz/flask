@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>My Other Flask Application II</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body>
+    <h1>Welcome to my other Flask application!</h1>
+    <ul>
+        {% for dat in data %}
+        <li>{{ dat }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
